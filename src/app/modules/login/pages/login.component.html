@@ -1,0 +1,35 @@
+<!-- LOGOTIPO -->
+<div class="fundo">
+    <div class="card estilo">
+      <div class="card-body">
+        <form [formGroup]="formDadosLogin">
+          <h2 class="fonte">Acesse o portal do Multilogin</h2>
+          <div class="form-group">
+            <!-- <mat-form-field appearance="outline" class="col-12">
+              <mat-label>Login</mat-label>
+            </mat-form-field> -->
+            <input matInput type="text" class="inputs" id="login" formControlName="login" 
+              onlyText required/>
+          </div>
+          <div class="form-group">
+            <!-- <mat-form-field appearance="outline" class="col-12">
+              <mat-label>Senha</mat-label>
+            </mat-form-field> -->
+            <input matInput type="password" class="inputs" id="senha" formControlName="senha" 
+              onlyPassword required/>
+            <!-- OLHO DE PASSWORD -->
+          </div>
+          <!-- MANTENHA-ME CONECTADO -->
+          <div class="row inputs">
+            <div class="col-6">
+              <a class="links cadastrar" [routerLink]="['/student']">Cadastre-se</a>
+            </div>
+            <div class="col-6">
+              <a class="links recuperarsenha">Esqueceu a senha?</a>
+            </div>
+          </div>
+          <button type="submit" class="btn btn botaoenviar">ENTRAR</button>
+        </form>
+      </div>
+    </div>
+  </div> 

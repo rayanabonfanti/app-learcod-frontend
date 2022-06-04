@@ -72,10 +72,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "app-learcod:build:production"
+              "browserTarget": "app-learcod:build:production",
+              "proxyConfig": "src/proxy-api.conf.js"
             },
             "development": {
-              "browserTarget": "app-learcod:build:development"
+              "browserTarget": "app-learcod:build:development",
+              "proxyConfig": "src/proxy-api.conf.js"
             }
           },
           "defaultConfiguration": "development"
