@@ -1,0 +1,76 @@
+.btn-neoprimary{
+    border: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    height: 2.75rem;
+    border-radius: 3.125rem;
+    letter-spacing: 0.024rem;
+    line-height: 1.188rem;
+    border-color: #f8fafb !important;
+    color: white !important;
+    background-color: var(--neo-light-green);
+}
+
+.btn-neoprimary:focus{
+    outline: none;
+}
+
+.btn-neoprimary:hover:enabled,
+.btn-neoprimary:hover:enabled{
+    outline: transparent;
+    box-shadow: none !important;
+    opacity: 0.8;
+    color: white;
+}
+
+.btn-neoprimary:disabled{
+    background-color: #e8e9e9 !important;
+    border-color: #e8e9e9 !important;
+    color: #707070 !important;
+}
+
+.btn-neo-outline-secondary {
+    font-size: 0.875rem;
+    height: 2.75rem;
+    border: 1px solid #6c757d;
+    border-radius: 3.125rem;
+    letter-spacing: 0.024rem;
+    line-height: 1.188rem;
+    color: #6c757d;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-neo-outline-secondary:hover:enabled {
+    outline: transparent;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    text-decoration: none;
+}
+
+.btn-neodarkgreen {
+    @extend .btn-neoprimary;
+    background-color: var(--neo-dark-green);
+}
+
+.btn-neoblue {
+    @extend .btn-neoprimary;
+    background-color: var(--neoDarkBlue);
+}
+
+button {
+    outline: none;
+}
+
+

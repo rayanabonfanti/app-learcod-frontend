@@ -1,1 +1,18 @@
-<p>informacoes-student works!</p>
+<form [formGroup]="studentFormGroup" class="full-height">
+    <p>Informar a Matrícula:</p>
+    <div class="mb-3 mt-3">
+        <input matInput type="text" required formControlName="registration">
+    </div>
+    <div class="col-2 d-flex justify-content-between mt-5">
+        <div>
+            <!--<app-neo-button class="mr-3 m-0" [classes]="'btn-neo-outline-secondary'" [titleText]="'VOLTAR'" (callFunction)="voltar()">
+            </app-neo-button>-->
+            <button type="button" class="btn btn botao voltar" (click)="voltar()">VOLTAR</button>
+        </div>
+        <div>
+             <!--<app-neo-button class="mr-3 m-0" [classes]="'btn-neo-outline-secondary'" [titleText]="'CONTINUAR'" (callFunction)="continuar()">
+            </app-neo-button>-->
+            <button type="button" class="btn btn botao voltar" (click)="continuar()">CONTINUAR</button>
+        </div>
+    </div>
+</form>
