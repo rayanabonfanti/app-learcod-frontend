@@ -1,1 +1,27 @@
-<h2>Login</h2>
+<div class="card estilo">
+  <div class="card-body">
+    <form [formGroup]="formDadosLogin">
+      <h2 class="fonte">Access the app portal Learcod</h2>
+        <div class="form-group">
+          <input matInput type="text" class="inputs" id="login" formControlName="login" 
+              onlyText required/>
+        </div>
+        <div class="form-group">
+          <input matInput type="text" class="inputs" id="senha" formControlName="senha" 
+              onlyText required/>
+        </div>
+        <div class="row linksespaco">
+          <div class="col-4">
+            <a class="links cadastrar" [routerLink]="['/student']">Save Student</a>
+          </div>
+          <div class="col-4">
+            <a class="links cadastrar" [routerLink]="['/teacher']">Save Teacher</a>
+          </div>
+          <div class="col-4">
+            <a class="links recuperarsenha" [routerLink]="['/recuperar-senha']">Forgot your password?</a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn">LOGIN</button>
+    </form>
+  </div>
+</div>
