@@ -23,10 +23,10 @@ export class StudentComponent {
   }
 
   continuar(event: any) {
-    if (event.status == 'VALID') {
+    //if (event.status == 'VALID') {
       this.converterFormParaDTO(event);
       this._router.navigateByUrl('student/confirmar');
-    }
+    //}
   }
 
   converterFormParaDTO(event: any) {

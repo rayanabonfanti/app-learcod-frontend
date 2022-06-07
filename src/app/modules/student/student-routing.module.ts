@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConfirmarComponent } from './pages/confirmar/confirmar.component';
 import { StudentComponent } from './pages/student/student.component';
 
 const routes: Routes = [
   {
     path: '',
     component: StudentComponent,
-  }
-  /*
+  },
   {
     path: 'confirmar',
     children: [
@@ -16,17 +16,16 @@ const routes: Routes = [
         component: ConfirmarComponent
       }
     ]
-  },
-  {
-    path: 'solicitacao-concluida',
-    children: [
-      {
-        path: '',
-        component: SolicitacaoConcluidaComponent
-      }
-    ]
   }
-  */
+  // {
+  //   path: 'solicitacao-concluida',
+  //   children: [
+  //     {
+  //       path: '',
+  //       component: SolicitacaoConcluidaComponent
+  //     }
+  //   ]
+  // }
 ];
 
 @NgModule({

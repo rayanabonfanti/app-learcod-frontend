@@ -1,0 +1,86 @@
+.fonte1{
+    padding-left: 30px;
+    color: var(--neo-dark-green);
+}
+
+.fonte2{
+    padding-left: 30px;
+    color: var(--neo-dark-gray);
+}
+
+.fonte3{
+    padding-left: 30px;
+    color: var(--neo-dark-gray);
+    font-weight: bold;
+}
+
+.botao {
+    background-color: var(--neoColorWhite);
+    color: var(--textDark);
+    padding: 10px 30px;
+    border-radius: 40px 40px 40px 40px;
+    border: 1.2px solid var(--textDark);
+    text-align: center;
+    transform: translateX(5%);
+}
+
+.voltar:hover{
+    background-color: var(--neo-dark-gray);
+    opacity: 0.9; 
+}
+
+.continuar:hover{
+    background-color: var(--neo-dark-green);
+    opacity: 0.9;
+}
+
+.entradas {
+    color: var(--textDark);
+    padding: 15px 30px;
+    margin: 7px;
+    width: 85%;
+    border: 1.2px solid var(--textDark);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.estilo{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.fundo{
+    background-color: var(--neo-dark-green);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.boxForm {
+  background-color: var(--neoLightGreen);
+  border-radius: 10px 10px 10px 10px;
+  margin: 15px;
+  transform: translateX(3%);
+}
+
+.text-box-term {
+  color: var(--neoColorWhite);
+  padding: 10px;
+  letter-spacing: 0.34px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.label{
+    transform: translateX(2%);
+}
+
+.botaocontinuar{
+    margin: 15px;
+}
+
+.margembotao{
+    margin: 7px;
+}

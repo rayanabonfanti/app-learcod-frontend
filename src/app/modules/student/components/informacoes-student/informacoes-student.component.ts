@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './informacoes-student.component.html',
   styleUrls: ['./informacoes-student.component.scss']
 })
-export class InformacoesStudentComponent {
+export class InformacoesStudentComponent implements OnInit{
 
   studentFormGroup: FormGroup;
   student = new StudentDTO();
@@ -25,12 +25,15 @@ export class InformacoesStudentComponent {
     });
   }
 
+  ngOnInit(): void {
+     
+  }
+
   voltar() {
     this._router.navigate(["/login"]);
   }
 
   continuar() {
-    console.log('emit não está funcionando');
     this.continuarEvent.emit(this.studentFormGroup);
   }
 
